@@ -27,7 +27,13 @@ section {
   transition: all 1s;
 }
 
-/* This is important for accessibility */
+/*
+  Disable animations when user prefer to
+  not see animation
+
+  Find more details here
+  https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+*/
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
